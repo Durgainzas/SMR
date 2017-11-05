@@ -21,9 +21,9 @@
         </Grid.RowDefinitions>
 
         <Border Grid.Column="0" Grid.Row="1" BorderBrush="Gray" Background="Black"/>
-        <StackPanel Grid.Column="0" Grid.Row="1" >
+        <Grid Grid.Column="0" Grid.Row="1" >
             <local:WeatherPage />
-        </StackPanel>
+        </Grid>
         
         
     </Grid>
