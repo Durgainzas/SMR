@@ -31,14 +31,14 @@
         </StackPanel>
 
         <StackPanel Grid.Column="1" Margin="40,0,0,0" VerticalAlignment="Center">
-            <TextBlock Name="TextBlockTime" Foreground="White" FontSize="10" Text="Loading..."/>
-            <TextBlock Name="TextBlockLocation" Foreground="White" FontSize="10" Text="Loading..."/>
-            <TextBlock Name="TextBlockWeatherText" Foreground="White" FontSize="10" Text="Loading..."/>
-            <TextBlock Name="TextBlockTemperature" Foreground="White" FontSize="10" Text="Loading..."/>
+            <TextBlock Name="TextBlockTime" Foreground="White" FontSize="15" Text="Loading..."/>
+            <TextBlock Name="TextBlockLocation" Foreground="White" FontSize="15" Text="Loading..."/>
+            <TextBlock Name="TextBlockWeatherText" Foreground="White" FontSize="15" Text="Loading..."/>
+            <TextBlock Name="TextBlockTemperature" Foreground="White" FontSize="15" Text="Loading..."/>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal"
             HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Name="TextBlockIPAddress" Foreground="White" FontSize="10" Text="Loading..." Margin="0,0,20,0"/>
+            <TextBlock Name="TextBlockIPAddress" Foreground="White" FontSize="15" Text="Loading..." Margin="0,0,20,0"/>
 
         </StackPanel>
     </Grid>
