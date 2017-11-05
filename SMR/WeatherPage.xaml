@@ -30,7 +30,7 @@
             <Image Margin="20" Source="Assets/partially-cloudy.png"/>
         </StackPanel>
 
-        <StackPanel Grid.Column="1" Margin="40,0,0,0" VerticalAlignment="Center">
+        <StackPanel Height="200" Grid.Column="1" Margin="40,0,0,0" VerticalAlignment="Center">
             <TextBlock Name="TextBlockTime" Foreground="White" FontSize="10" Text="Loading..."/>
             <TextBlock Name="TextBlockLocation" Foreground="White" FontSize="10" Text="Loading..."/>
             <TextBlock Name="TextBlockWeatherText" Foreground="White" FontSize="10" Text="Loading..."/>
