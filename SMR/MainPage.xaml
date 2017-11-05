@@ -20,7 +20,7 @@
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
 
-        <Border Grid.Column="0" Grid.Row="1" BorderBrush="Aqua" Background="Black"/>
+        <Border Grid.Column="0" Grid.Row="1" BorderBrush="Gray" Background="Black"/>
         <StackPanel Grid.Column="0" Grid.Row="1" >
             <local:WeatherPage />
         </StackPanel>
