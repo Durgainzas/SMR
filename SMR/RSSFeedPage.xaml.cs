@@ -43,6 +43,7 @@ namespace SMR
         {
             
             feed = await rssclient.GetFeedAsync(rssFeedUri);
+
             try
             {
                 TextBlockRSS.Text = placeholder;
