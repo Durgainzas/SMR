@@ -14,10 +14,9 @@
                       VerticalScrollMode="Disabled" 
                       HorizontalScrollMode="Enabled" 
                       Grid.Row="1" 
-                      Loaded="ScrollViewer_Loaded" 
                       Unloaded="Scrollviewer_Unloaded">
             
-            <TextBlock x:Name="TextBlock" FontSize="25" TextWrapping="NoWrap" />
+            <TextBlock x:Name="TextBlockRSS" FontSize="25" TextWrapping="NoWrap" />
         </ScrollViewer>
     </Grid>
     

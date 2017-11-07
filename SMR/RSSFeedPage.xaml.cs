@@ -28,8 +28,8 @@ namespace SMR
         SyndicationFeed feed = new SyndicationFeed();
         RSSClient rssclient = new RSSClient();
 
-
-        string lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ";
+        private string placeholder = "\t\t\t\t\t";
+        
         private string rssFeedUri = "http://servis.idnes.cz/rss.aspx?c=zpravodaj";
 
 
@@ -41,23 +41,27 @@ namespace SMR
 
         private async void Feeder_Init()
         {
+            
             feed = await rssclient.GetFeedAsync(rssFeedUri);
             try
             {
+                TextBlockRSS.Text = placeholder;
                 foreach (var item in feed.Items)
                 {
-                    TextBlock.Text += $"{item.Title.Text}. ";
+                    TextBlockRSS.Text += $"{item.Title.Text}. | ";
                 }
+                TextBlockRSS.Text += placeholder;
+                Scrolling_Start();
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                TextBlock.Text = e.Message;
-                throw;
+                TextBlockRSS.Text = "Error loading data. Please check internet connection or try again later.";
             }
 
+            
         }
 
-        private void ScrollViewer_Loaded(object sender, RoutedEventArgs e)
+        private void Scrolling_Start()
         {
             timer.Tick += (ss, ee) =>
             {
