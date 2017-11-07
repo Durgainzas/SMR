@@ -46,10 +46,11 @@ namespace SMR
             {
                 feed = await rssclient.GetFeedAsync(rssFeedUri);
                 TextBlockRSS.Text = placeholder;
-                foreach (var item in feed.Items)
+                for (int i = 0; i < 5; i++)
                 {
-                    TextBlockRSS.Text += $"{item.Title.Text}. | ";
+                    TextBlockRSS.Text += $"{feed.Items[i].Title.Text}. | ";
                 }
+
                 TextBlockRSS.Text += placeholder;
                 Scrolling_Start();
             }
