@@ -97,7 +97,6 @@
     </Compile>
     <Compile Include="Helpers\ApiClient.cs" />
     <Compile Include="Helpers\RSSClient.cs" />
-    <Compile Include="Helpers\RSSFeedHelper.cs" />
     <Compile Include="Helpers\WeatherHelper.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
