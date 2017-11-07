@@ -41,11 +41,10 @@ namespace SMR
 
         private async void Feeder_Init()
         {
-            
-            feed = await rssclient.GetFeedAsync(rssFeedUri);
 
             try
             {
+                feed = await rssclient.GetFeedAsync(rssFeedUri);
                 TextBlockRSS.Text = placeholder;
                 foreach (var item in feed.Items)
                 {
