@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace SMR.Helpers
 {
-    class RSSFeedHelper
+    public static class RSSFeedHelper
     {
+
     }
 }
