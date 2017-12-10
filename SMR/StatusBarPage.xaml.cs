@@ -22,14 +22,18 @@ namespace SMR
     /// </summary>
     public sealed partial class StatusBarPage : Page
     {
+        DateTime dateTime = DateTime.Now;
         public StatusBarPage()
         {
             this.InitializeComponent();
         }
 
+
+
         private void TextBlockDateTime_Loaded(object sender, RoutedEventArgs e)
         {
-
+            TextBlockDateTime.Text = dateTime.ToString();
+            
         }
     }
 }

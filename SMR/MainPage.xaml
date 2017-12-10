@@ -21,6 +21,9 @@
         </Grid.RowDefinitions>
 
         <Border Grid.Column="0" Grid.Row="1" BorderBrush="Gray" Background="Black"/>
+        <Grid Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+            <local:StatusBarPage />
+        </Grid>
         <Grid Grid.Column="0" Grid.Row="1" >
             <local:WeatherPage />
         </Grid>

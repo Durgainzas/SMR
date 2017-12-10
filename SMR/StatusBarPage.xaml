@@ -21,7 +21,7 @@
             <TextBlock Text="Logo" />
         </StackPanel>
 
-        <TextBlock x:Name="TextBlockDateTime" Loaded="TextBlockDateTime_Loaded" Grid.Column="1" Grid.Row="0" />
+        <TextBlock x:Name="TextBlockDateTime" HorizontalAlignment="Center" FontSize="30" Loaded="TextBlockDateTime_Loaded" Grid.Column="1" Grid.Row="0" />
 
     </Grid>
 </Page>
