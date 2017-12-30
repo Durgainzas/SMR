@@ -23,6 +23,9 @@ namespace SMR
     public sealed partial class StatusBarPage : Page
     {
         DateTime dateTime = DateTime.Now;
+        DispatcherTimer timer = new DispatcherTimer();
+
+
         public StatusBarPage()
         {
             this.InitializeComponent();
@@ -32,8 +35,30 @@ namespace SMR
 
         private void TextBlockDateTime_Loaded(object sender, RoutedEventArgs e)
         {
-            TextBlockDateTime.Text = dateTime.ToString();
+            TextBlockDateTime.Text = "Loading...";
+            Timer_Start();
             
+        }
+
+        private void Timer_Start()
+        {
+            timer.Tick += (ss, ee) =>
+            {
+                if (timer.Interval.Ticks == 1000)
+                {
+                    DateTime dateTime = DateTime.Now;
+                    var actualTimeFormated = String.Format("{0:d.M.yyyy HH:mm:ss}", dateTime);
+                    TextBlockDateTime.Text = actualTimeFormated;
+                }
+
+            };
+            timer.Interval = new TimeSpan(1000);
+            timer.Start();
+        }
+
+        private void Timer_Unloaded(object sender, RoutedEventArgs e)
+        {
+            timer.Stop();
         }
     }
 }
