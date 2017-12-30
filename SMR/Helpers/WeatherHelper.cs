@@ -11,7 +11,7 @@ namespace SMR.Helpers
     public static class WeatherHelper
     {
         public const string IP = "78.45.147.145";
-        public const string BaseUriAccuWeather = "";    //"http://dataservice.accuweather.com";
+        public const string BaseUriAccuWeather = "";//"http://dataservice.accuweather.com";
         public const string BaseUriIpInfo = "http://ip-api.com/";
 
         /// <summary>

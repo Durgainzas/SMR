@@ -108,6 +108,9 @@
     <Compile Include="RSSFeedPage.xaml.cs">
       <DependentUpon>RSSFeedPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="StatusBarPage.xaml.cs">
+      <DependentUpon>StatusBarPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WeatherPage.xaml.cs">
       <DependentUpon>WeatherPage.xaml</DependentUpon>
     </Compile>
@@ -136,6 +139,10 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="StatusBarPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="RSSFeedPage.xaml">
       <SubType>Designer</SubType>
