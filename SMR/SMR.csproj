@@ -105,6 +105,9 @@
     <Compile Include="Models\Weather\IPInfo.cs" />
     <Compile Include="Models\Weather\Location.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RSSFeedPage.xaml.cs">
+      <DependentUpon>RSSFeedPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StatusBarPage.xaml.cs">
       <DependentUpon>StatusBarPage.xaml</DependentUpon>
     </Compile>
