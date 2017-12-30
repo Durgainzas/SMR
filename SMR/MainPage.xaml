@@ -18,13 +18,18 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
+            <RowDefinition Height="50" />
         </Grid.RowDefinitions>
 
-        <Border Grid.Column="0" Grid.Row="1" BorderBrush="Gray" Background="Black"/>
+        
         <Grid Grid.Column="0" Grid.Row="1" >
             <local:WeatherPage />
         </Grid>
-        
-        
+
+        <Grid Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2">
+            <local:RSSFeedPage />
+        </Grid>
+
+
     </Grid>
 </Page>

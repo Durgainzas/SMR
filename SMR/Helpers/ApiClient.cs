@@ -9,7 +9,7 @@ namespace SMR.Helpers
 {
     public class ApiClient
     {
-        private const string ApiKey = "T37uffG1OZ0NI9FYkzv0bfHqK8RAjW3m";
+        private const string ApiKey = ""; //T37uffG1OZ0NI9FYkzv0bfHqK8RAjW3m
 
         private static readonly HttpClient _client = new HttpClient();
 
