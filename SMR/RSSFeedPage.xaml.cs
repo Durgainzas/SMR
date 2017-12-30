@@ -28,6 +28,8 @@ namespace SMR
         SyndicationFeed feed = new SyndicationFeed();
         RSSClient rssclient = new RSSClient();
 
+        int counter = 0;
+
         private string placeholder = "\t\t\t\t\t";
         
         private string rssFeedUri = "http://servis.idnes.cz/rss.aspx?c=zpravodaj";
@@ -52,6 +54,7 @@ namespace SMR
                 }
 
                 TextBlockRSS.Text += placeholder;
+                scrollviewer.ChangeView(-scrollviewer.HorizontalOffset, null, null, true);
                 Scrolling_Start();
             }
             catch (Exception)
@@ -74,7 +77,14 @@ namespace SMR
                     if (scrollviewer.HorizontalOffset == scrollviewer.ScrollableWidth)
                     {
                         scrollviewer.ChangeView(-scrollviewer.HorizontalOffset, null, null, true);
-                    }  
+                    }
+                    if (counter == 3000) //10minutes
+                    {
+                        counter = 0;
+                        timer.Stop();
+                        Feeder_Init();
+                    }
+                    counter += 1;
                 }
             };
             timer.Interval = new TimeSpan(300);
